@@ -12,46 +12,67 @@
 			background-attachment : fixed;
 			background-size : 100% 100%;
 			background-position : 0% 0%;
+			font-family: 'Gamja Flower', cursive, 맑은 고딕; 
+			
+		}
+		
+		nav {
+			box-sizing : border-box;
+			margin : 0px auto;
+			padding : 8px;
+ 			width : 80%; 
+			border : 1px solid #775295;
+			border-radius: 10px;
+			background-color: #B8CCEF;
+			color : #775295;
+			position: fixed;
+			top: 8px;
+			
+		}
+		
+		#nav-box {
+			padding:0;
+		}
+		
+		#nav-box li {
+			float : left;
+			padding : 8px;
+			list-style-type : none; 
 		}
 		
 		fieldset {
+			box-sizing:border-box;
 			background-color: #F1EEEE;
-			margin: 0 auto;
+			margin: 8px auto;
+			padding : 0px;
 			width: 80%;
-			font-family: 'Gamja Flower', cursive, 맑은 고딕; 
 			color : #374035;
 			border: 2px solid #374035;
 			border-radius: 10px;
 		}
 		
-		#header-box, #footer-box{
-			width : 90%;
+		#header-box{
+			width : 80%;
+			padding-top : 40px;
+			text-align : center;
+			margin : 16px auto;
+		}
+		
+		#footer-box{
+			width : 80%;
 			text-align : center;
 			margin : 16px auto;
 		}
 
 		
 		figure {
-			width:400px;
+			width: 400px;
 			margin : 0 auto;
 		}
 		
-		nav {
-			width : 100%;
-			margin : 0 auto;
-			padding : 0;
-			border : 1px solid #775295;
-			border-radius: 10px;
-			background-color: #B8CCEF;
-			color : #775295;
-		}
-		
-		#nav-box {
-			display : inline-block;
-			padding : 8px;
-		}
 		
 		section {
+			clear:both;
 			width : 90%;
 			margin: 0 auto;
 			border : 1px solid #775295;
@@ -78,18 +99,21 @@
 	</style>
 </head>
 <body>
-<fieldset>
+
 	<nav>
 		<div>
-			<ul>
-				<li id = "nav-box"><a href="#menu1">Who am I?</a></li>
-				<li id = "nav-box"><a href="#menu2">Experience</a></li>
-				<li id = "nav-box"><a href="#menu3">Skills</a></li>
-				<li id = "nav-box"><a href="#menu4">Education</a></li>
-				<li id = "nav-box"><a href="#menu5">Connect</a></li>
+			<ul id = "nav-box">
+				<li><a href="#menu1">Who am I?</a></li>
+				<li><a href="#menu2">Experience</a></li>
+				<li><a href="#menu3">Skills</a></li>
+				<li><a href="#menu4">Education</a></li>
+				<li><a href="#menu5">Connect</a></li>
 			</ul>
 		</div>
 	</nav>
+
+<fieldset>
+	
 	
 	<header>
 	<div id = "header-box">
