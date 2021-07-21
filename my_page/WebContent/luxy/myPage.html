@@ -18,32 +18,55 @@
 		
 		nav {
 			box-sizing : border-box;
-			margin : 0px auto;
-			padding : 8px;
+			margin: 0px auto;
+			padding: 10px 16px;
  			width : 80%; 
+ 			height : 60px;
 			border : 1px solid #775295;
-			border-radius: 10px;
+			border-radius: 0px 0px 10px 10px;
 			background-color: #B8CCEF;
 			color : #775295;
-			position: fixed;
-			top: 8px;
+ 			position: fixed; 
+ 			top: 0; 
+			left: 10%;
+			
 			
 		}
-		
-		#nav-box {
-			padding:0;
+		#nav-box{
+			padding: 0;
+			margin:0;
+			
 		}
-		
 		#nav-box li {
 			float : left;
-			padding : 8px;
+			text-align : center;
 			list-style-type : none; 
+			box-sizing : border-box;
+			border-right: 1px solid #B8CCEF;
+			
+		}
+		#nav-box li:last-child{
+			border-right-style: none;
+		}
+		#nav-box li:hover {
+			text-shadow : 1px 1px 1px #111111;
+		}
+		#nav-box li a { 
+			box-sizing : border-box;
+			display: block;
+			width:95px;
+			padding: 8px;
+			text-decoration : none; 
+			color:#775295; font-weight : bold; 
+			background-color: #F1EEEE;
+			text-align: center;
 		}
 		
 		fieldset {
 			box-sizing:border-box;
 			background-color: #F1EEEE;
 			margin: 8px auto;
+			margin-top:68px;
 			padding : 0px;
 			width: 80%;
 			color : #374035;
@@ -53,7 +76,6 @@
 		
 		#header-box{
 			width : 80%;
-			padding-top : 40px;
 			text-align : center;
 			margin : 16px auto;
 		}
@@ -73,28 +95,28 @@
 		
 		section {
 			clear:both;
-			width : 90%;
+			width : 80%;
 			margin: 0 auto;
 			border : 1px solid #775295;
 			padding : 8px;
 		}
-		
+		mark{background-color:#B8CCEF; font-weight : bold;}
 		h1 {margin : 20px; color: #775295; font-size : 2em; text-shadow : 1px 1px 1px #111111;}
 		th, thead {background-color:#6B7EBE;}
 		td, tbody{background-color:#B8CCEF; text-align: center;}
 		h4 {color:#775295;}
-		a {text-decoration : none; color:#775295; font-weight : bold; text-shadow : 1px 1px 1px #111111;}
-		mark{background-color:#6B7EBE; font-weight : bold;}
+		table mark{background-color:#6B7EBE; font-weight : bold;}
 		h4 {padding : 0px 40px 0px 0px;}
 
 		.logo {
 			width:100px;
 			border-radius:50%;
+			margin: 0px 8px;
 		}
 		
-		table {margin : 0 auto;}
+		table {margin : 0 auto; border-collapse: collapse;}
 		
-		#indent {text-indent : 10px;}
+		p#indent {text-indent : 10px;}
 		
 	</style>
 </head>

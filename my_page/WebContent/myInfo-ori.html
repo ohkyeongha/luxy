@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My info</title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+	* {
+		margin : 0;
+		padding: 0;
+		font-family: 'Gamja Flower', cursive, 맑은 고딕; 
+	}
+	body {
+		font-size: 16px;
+	
+	}
+	h1 { 
+		color: #775295;
+		text-align: center;
+		font-size: 3em;
+		padding: 20px 0;
+	}
+	.bg-dark {
+		background-color: #6B7EBE;
+		color:white;
+	}
+	.bg-light {
+		background-color: #B8CCEF; 
+		color:#111111;;
+	}
+	/* 메인메뉴 */
+	nav#main-menu ul, nav#myInfo-menu ul {
+		list-style-type: none;
+	}
+	nav#main-menu ul li{
+		float: right;
+	}
+	nav#main-menu ul li a{
+		text-decoration: none;
+		padding: 0 5px;
+		margin-bottom: 2px;
+		color: #775295;
+	}
+	nav#myInfo-menu {
+		height: 50px;
+		line-height: 50px;
+	}
+	nav#myInfo-menu ul{
+		width: 720px;
+		margin : 0 auto;
+	}
+	nav#myInfo-menu ul li{
+		float: left;
+	}
+	nav#myInfo-menu ul li a{
+		display: inline-block;
+		text-decoration: none;
+		padding: 0 20px;
+		color: #775295;
+		width: 200px;
+		font-size: 22px;
+		text-align: center;
+	}
+	
+	nav#myInfo-menu ul li a:hover{
+		color: white;
+		background-color: #775295;
+	}
+	
+	#myCharacter {
+		position: relative;
+		height: 300px;
+		clear: right;
+	}
+	#myCharacter img {
+		position : absolute;
+		top: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 300px;
+		height: 200px;
+		border-radius: 20px;
+		box-shadow: 2px 2px 1px #111111;
+	}
+	#myCharacter span {
+		display: block;
+		color:white;
+		font-size: 22px;
+		text-shadow: 2px 2px 1px #775295;
+	}
+	#myCharacter div {
+		position : absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-60%);
+	}
+	
+	#whoami{
+		height: 400px;
+	}
+	#whoami p{
+		display: block;
+		width: 70%;
+		margin: 20px auto;
+		border: 1px solid #775295;
+		background-color:white;
+		color: #111111;;
+		border-radius: 30px;
+		padding: 10px;
+	}
+	
+	
+	.logo {
+		width:100px;
+		border-radius:50%;
+		margin: 4px;
+	}
+</style>
+</head>
+
+<body>		
+	<header>
+		<h1>LUXY</h1>
+		<nav id="main-menu">
+			<ul>
+				<li><a href="#">Project</a></li>
+				<li><a href="#">My info</a></li>
+			</ul>
+		</nav>
+		
+		<div id = "myCharacter" class = "bg-dark">
+			<img alt="사랑은스릴쇼크서스팬스" src="img/background_img.png"><br>
+			<div>
+				<span>본캐 : 오경하</span>
+				<span>부캐 : Luxy</span>
+			</div>
+		</div>
+	</header>
+	
+	<nav id="myInfo-menu" class = "bg-light">
+		<ul>
+			<li><a href="#menu1">Who am I?</a></li>
+			<li><a href="#menu2">나는 이런 사람 입니다.</a></li>
+			<li><a href="#menu3">About Me</a></li>
+		</ul>
+		
+	</nav>
+	
+	<section>
+		<div id = "whoami" class = "bg-dark">
+			<h1 id="menu1">Who am I?</h1>
+			<p>
+				<mark>프론트앤드 웹 기술(Front-end Web Tech.)</mark>에 관심을 가지고 있습니다.
+			</p>
+			<p>
+				분명 월요일까진 재미 있었는데...
+			</p>
+			<p>
+				이상하다...
+			</p>
+		</div>
+		
+		<div class = "bg-light">
+			<h1 id="menu2">나는 이런 사람 입니다.</h1>
+			<div>
+				<div>나의 이미지1</div>
+				<div>나는 어떤 사람 입니다.</div>
+			</div>
+			<div>
+				<div>나의 이미지2</div>
+				<div>나는 어떤 사람 입니다.</div>
+			</div>
+		</div>
+		
+		<div class = "bg-dark">
+			<h1 id="menu3">About Me</h1>
+			<div>
+				<img alt="프로필아이콘" src="">
+				<div>
+					<span>내용 1</span>
+					<span>내용 2</span>
+					<span>내용 3</span>
+				</div>
+			</div>
+			<div>
+				<img alt="커리어아이콘" src="">
+				<div>
+					<span>내용 1</span>
+					<span>내용 2</span>
+					<span>내용 3</span>
+				</div>
+			</div>
+			<div>
+				<img alt="흥미아이콘" src="">
+				<div>
+					<span>내용 1</span>
+					<span>내용 2</span>
+					<span>내용 3</span>
+				</div>
+			</div>
+			<div>
+				<img alt="목표아이콘" src="">
+				<div>
+					<span>내용 1</span>
+					<span>내용 2</span>
+					<span>내용 3</span>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<footer>
+		<div class = "bg-light">
+			<p>
+				<a href="https://luxycoding.tistory.com/"><img alt="로고" src="img/luxy_icon.jpg" class = "logo"></a>
+				<a href="https://github.com/ohkyeongha"><img alt="로고" src="img/git_icon.png" class = "logo"></a> <br>
+				<br>about 오경하 | 개인정보보호 | 문의 : jkgj_jkgj@naver.com<br>
+				@2021 OKH
+				
+			</p>
+		</div>
+	</footer>
+</body>
+</html>
