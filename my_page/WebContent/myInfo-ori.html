@@ -11,22 +11,23 @@
 		font-family: 'Gamja Flower', cursive, 맑은 고딕; 
 	}
 	body {
+		width:650px;
+		margin: 0 auto;
 		font-size: 16px;
-	
+		color:#53664C;
 	}
 	h1 { 
-		color: #775295;
+		color: #E98890;
+		text-shadow: 2px 2px 1px #F8BBB1;
 		text-align: center;
 		font-size: 3em;
 		padding: 20px 0;
 	}
 	.bg-dark {
-		background-color: #6B7EBE;
-		color:white;
+		background-color: #F6DCBF;
 	}
 	.bg-light {
-		background-color: #B8CCEF; 
-		color:#111111;;
+		background-color: #F5EAD2; 
 	}
 	/* 메인메뉴 */
 	nav#main-menu ul, nav#myInfo-menu ul {
@@ -39,14 +40,22 @@
 		text-decoration: none;
 		padding: 0 5px;
 		margin-bottom: 2px;
-		color: #775295;
+		color: #E98890;
+	}
+	nav#main-menu ul li a:hover{
+		color: #53664C;
+		font-weight:bold;
+		text-shadow: 2px 2px 1px #E98890;
 	}
 	nav#myInfo-menu {
 		height: 50px;
 		line-height: 50px;
 	}
+	nav#myInfo-menu div {
+		margin : 0 auto;
+	}
 	nav#myInfo-menu ul{
-		width: 720px;
+		width: 600px;
 		margin : 0 auto;
 	}
 	nav#myInfo-menu ul li{
@@ -55,8 +64,7 @@
 	nav#myInfo-menu ul li a{
 		display: inline-block;
 		text-decoration: none;
-		padding: 0 20px;
-		color: #775295;
+		color: #53664C;
 		width: 200px;
 		font-size: 22px;
 		text-align: center;
@@ -64,8 +72,10 @@
 	
 	nav#myInfo-menu ul li a:hover{
 		color: white;
-		background-color: #775295;
+		font-weight:bold;
+		background-color: #80A0D5;
 	}
+	
 	
 	#myCharacter {
 		position: relative;
@@ -80,13 +90,17 @@
 		width: 300px;
 		height: 200px;
 		border-radius: 20px;
+		box-shadow: 2px 2px 1px #80A0D5;
+	}
+	#myCharacter img:hover {
 		box-shadow: 2px 2px 1px #111111;
 	}
 	#myCharacter span {
 		display: block;
-		color:white;
+		color: white;
 		font-size: 22px;
-		text-shadow: 2px 2px 1px #775295;
+		font-weight:bold;
+		text-shadow: 2px 2px 1px #53664C;
 	}
 	#myCharacter div {
 		position : absolute;
@@ -96,25 +110,122 @@
 	}
 	
 	#whoami{
-		height: 400px;
+		padding-bottom: 20px;
 	}
 	#whoami p{
 		display: block;
 		width: 70%;
 		margin: 20px auto;
-		border: 1px solid #775295;
+		border: 1px solid #80A0D5;
 		background-color:white;
 		color: #111111;;
 		border-radius: 30px;
 		padding: 10px;
 	}
-	
-	
-	.logo {
-		width:100px;
-		border-radius:50%;
-		margin: 4px;
+	#mymotto {
+		padding-bottom: 20px;
 	}
+	#mymotto > div {
+		width: 70%;
+		margin: 0 auto;
+		display: flex;
+	}
+	#mymotto > div > div {
+		display: table;
+		width: 300px;
+		height: 300px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	#mymotto > div > div > span{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	#mymotto > div > div#img-box1 {
+		border: 1px solid gray;
+		background-image: url("img/luxy_icon.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		transform: scale(0.95);
+	}
+	#mymotto > div > div#img-box2 {
+		border: 1px solid gray;
+		background-image: url("img/git_icon.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		transform: scale(0.95);
+	}
+	
+	#aboutme {
+		padding-bottom: 20px;
+	}
+	#aboutme > div {
+		box-sizing: border-box;
+		width: 80%;
+		height : 350px;
+		margin: 0 auto;
+	}
+	#aboutme img {
+		box-sizing: border-box;
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		margin-bottom : 30px;
+	}
+	
+	
+	#aboutme > div > div {
+		display : inline-block;
+		box-sizing: border-box;
+		width: 25%;
+		margin: 0 auto;
+		margin-left: -4px;
+		text-align: center;
+		perspective: 100px;
+	}
+	#aboutme span {
+		display: block;
+		padding: 8px;
+	}
+	#aboutme h4 {
+		margin-bottom: 20px;
+		font-size: 22px;
+	}
+	
+	#footer > div{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#footer > div > div{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#footer img {
+		width:80px;
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-right: 10px;
+		border-radius: 50%;
+	}
+	#footer p {
+		clear:both;
+		line-height: 50px;
+		
+	}
+	
+	#mymotto .img-box {
+		filter: grayscale(100%);
+		
+	}
+	#mymotto .img-box:hover {
+		filter: none;
+	}
+	#aboutme img:hover {
+		transform: rotateY(360deg);
+	}
+	
 </style>
 </head>
 
@@ -123,7 +234,7 @@
 		<h1>LUXY</h1>
 		<nav id="main-menu">
 			<ul>
-				<li><a href="#">Project</a></li>
+				<li><a href="myProject.html">Project</a></li>
 				<li><a href="#">My info</a></li>
 			</ul>
 		</nav>
@@ -140,7 +251,7 @@
 	<nav id="myInfo-menu" class = "bg-light">
 		<ul>
 			<li><a href="#menu1">Who am I?</a></li>
-			<li><a href="#menu2">나는 이런 사람 입니다.</a></li>
+			<li><a href="#menu2">My Motto</a></li>
 			<li><a href="#menu3">About Me</a></li>
 		</ul>
 		
@@ -153,57 +264,67 @@
 				<mark>프론트앤드 웹 기술(Front-end Web Tech.)</mark>에 관심을 가지고 있습니다.
 			</p>
 			<p>
-				분명 월요일까진 재미 있었는데...
+				현재 KITRI에서 JAVA 웹 수업을 배우고 있습니다.
 			</p>
 			<p>
-				이상하다...
+				자격증 : 정보처리기사, 컴퓨터활용능력 1급
 			</p>
 		</div>
 		
-		<div class = "bg-light">
-			<h1 id="menu2">나는 이런 사람 입니다.</h1>
+		<div id = "mymotto" class = "bg-light">
+			<h1 id="menu2">My Motto</h1>
 			<div>
-				<div>나의 이미지1</div>
-				<div>나는 어떤 사람 입니다.</div>
+				<div id = "img-box1" class="img-box"></div>
+				<div>
+					<span>나는 어떤 사람 입니다.<span/>
+				</div>
 			</div>
 			<div>
-				<div>나의 이미지2</div>
-				<div>나는 어떤 사람 입니다.</div>
+				<div>
+					<span>나는 어떤 사람 입니다.<span/>
+				</div>
+				<div id = "img-box2" class="img-box"></div>
 			</div>
 		</div>
 		
-		<div class = "bg-dark">
+		<div id = "aboutme" class = "bg-dark">
 			<h1 id="menu3">About Me</h1>
 			<div>
-				<img alt="프로필아이콘" src="">
 				<div>
-					<span>내용 1</span>
-					<span>내용 2</span>
-					<span>내용 3</span>
+					<img alt="프로필아이콘" src="img/profile-icon.png">
+					<h4>PROFILE</h4>
+					<div>
+						<span>오경하</span>
+						<span>1997.05.26</span>
+						<span>jkgj_jkgj@naver.com</span>
+					</div>
 				</div>
-			</div>
-			<div>
-				<img alt="커리어아이콘" src="">
 				<div>
-					<span>내용 1</span>
-					<span>내용 2</span>
-					<span>내용 3</span>
+					<img alt="커리어아이콘" src="img/career-icon.png">
+					<h4>CAREER</h4>
+					<div>
+						<span>명문고등학교</span>
+						<span>가톨릭대학교</span>
+						<span>KITRI 이공계 94기</span>
+					</div>
 				</div>
-			</div>
-			<div>
-				<img alt="흥미아이콘" src="">
 				<div>
-					<span>내용 1</span>
-					<span>내용 2</span>
-					<span>내용 3</span>
+					<img alt="흥미아이콘" src="img/interest-icon.png">
+					<h4>INTERESTING</h4>
+					<div>
+						<span>Front-End</span>
+						<span>Web Developer</span>
+						<span>SI</span>
+					</div>
 				</div>
-			</div>
-			<div>
-				<img alt="목표아이콘" src="">
 				<div>
-					<span>내용 1</span>
-					<span>내용 2</span>
-					<span>내용 3</span>
+					<img alt="목표아이콘" src="img/goal-icon.png">
+					<h4>GOAL</h4>
+					<div>
+						<span>내용 1</span>
+						<span>내용 2</span>
+						<span>내용 3</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -211,14 +332,16 @@
 	</section>
 
 	<footer>
-		<div class = "bg-light">
-			<p>
-				<a href="https://luxycoding.tistory.com/"><img alt="로고" src="img/luxy_icon.jpg" class = "logo"></a>
-				<a href="https://github.com/ohkyeongha"><img alt="로고" src="img/git_icon.png" class = "logo"></a> <br>
-				<br>about 오경하 | 개인정보보호 | 문의 : jkgj_jkgj@naver.com<br>
-				@2021 OKH
-				
-			</p>
+		<div id = "footer" class = "bg-light">
+			<div>
+				<div>
+					<a href="https://luxycoding.tistory.com/"><img alt="로고" src="img/luxy_icon.jpg"></a>
+					<a href="https://github.com/ohkyeongha"><img alt="로고" src="img/git_icon.png"></a>
+				</div>
+				<p>
+				Copyright(C) 2021. OKH, All rights reserved
+				</p>
+			</div>
 		</div>
 	</footer>
 </body>
